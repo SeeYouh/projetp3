@@ -1,0 +1,24 @@
+/**Couleur de fond**/
+
+$colour-primary: #579c87;
+$colour-menunote: #fcdfdb;
+$colour-menuchic: #fff5fe;
+$colour-menupapilles: #f9f9f9;
+$colour-menugout: #fff;
+
+/**Couleur du texte**/
+
+$colortext-primary: #fdcb46;
+$colortext-textenote: #3c1218;
+$colortext-menunote: #3c1218;
+
+/**Police d'écriture**/
+
+$font-note: 
+
+$colour-menu: (
+    note: ($colour-menunote),
+    chic: ($colour-menuchic),
+    papilles: ($colour-menupapilles),
+    gout: ($colour-menugout),
+);
