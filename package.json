@@ -1,0 +1,19 @@
+{
+  "name": "projetp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeeYouh/projetp3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeeYouh/projetp3/issues"
+  },
+  "homepage": "https://github.com/SeeYouh/projetp3#readme"
+}
