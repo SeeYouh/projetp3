@@ -1,0 +1,28 @@
+/** Mise en page Body **/
+
+@mixin Body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/** Mise en page Header & Footer **/
+
+@mixin formatage-vertjaune {
+    background-color: $colour-primary;
+    color: $colortext-primary;
+}
+
+/** Flex **/
+
+@mixin tout-centrer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Bordure **/
+
+@mixin border {
+    border: 1px solid black;
+}

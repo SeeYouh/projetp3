@@ -1,9 +1,41 @@
+@import "./Utils/_imports";
 
+body {
+    @include Body;
+}
+
+.ohmyfood {
+        @include font-primary;
+        @include formatage-vertjaune;
+        @include tout-centrer;
+}
+
+.section-index {
+    @include tout-centrer;
+    flex-direction: column;
+    @include border;
+}
+
+.article-index {
+    width: 900px;
+    @include border;
+    //@include tout-centrer;
+    flex-direction: row; 
+    & ul {
+        list-style-type: none;
+        @include tout-centrer;
+        flex-flow: row wrap;
+        & li {
+            @include border;
+            width: 300px;
+            height: 500px;
+            margin: 20px 20px;
+        }
+    }   
+}
 
 @media screen and (max-width: 500px) {
     nav {
         width: 100%;
     }
 }
-
-@import "./Utils/variables";

@@ -1,18 +1,1 @@
-/* Error: expected ";".
- *    ,
- * 19 | $colour-menu: (
- *    |             ^
- *    '
- *   sass\utils\_variables.scss 19:13  @import
- *   sass\style.scss 9:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 19 \2502  $colour-menu: (\d\a    \2502              ^\a    \2575 \a   sass\\utils\\_variables.scss 19:13  @import\a   sass\\style.scss 9:9               root stylesheet';
-}
+body{padding:0;margin:0;width:100%}.ohmyfood{font-family:"Montserrat";font-size:2rem;background-color:#579c87;color:#fdcb46;display:flex;justify-content:center;align-items:center}.section-index{display:flex;justify-content:center;align-items:center;flex-direction:column;border:1px solid #000}.article-index{width:900px;border:1px solid #000;flex-direction:row}.article-index ul{list-style-type:none;display:flex;justify-content:center;align-items:center;flex-flow:row wrap}.article-index ul li{border:1px solid #000;width:300px;height:500px;margin:20px 20px}@media screen and (max-width: 500px){nav{width:100%}}/*# sourceMappingURL=style.css.map */

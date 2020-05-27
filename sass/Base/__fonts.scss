@@ -1,0 +1,35 @@
+/**Police d'écriture**/
+
+@mixin font-note {
+    font-family: 'Devonshire';
+    font-size: 2rem;
+}
+
+@mixin font-chic {
+    font-family: 'Croissant One';
+    font-size: 2rem;
+}
+
+@mixin font-papilles {
+    font-family: 'Dancing Script';
+    font-size: 2rem;
+}
+
+@mixin font-gout {
+    font-family: 'Kaushan Script';
+    font-size: 2rem;
+}
+
+@mixin font-primary {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+}
+
+@mixin font-secondaire {
+    font-family: 'Prompt';
+    font-size: 2rem;
+}
+
+@mixin font-body {
+    font-family: 'Caveat';
+}
