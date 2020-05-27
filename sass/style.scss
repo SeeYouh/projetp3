@@ -17,9 +17,8 @@ body {
 }
 
 .article-index {
-    width: 900px;
+    width: 800px;
     @include border;
-    //@include tout-centrer;
     flex-direction: row; 
     & ul {
         list-style-type: none;
@@ -34,8 +33,12 @@ body {
     }   
 }
 
-@media screen and (max-width: 500px) {
-    nav {
+@media screen and (max-width: 750px) {
+    .article-index {
         width: 100%;
+        & ul {
+            @include tout-centrer;
+            flex-direction: column;
+        }
     }
 }
