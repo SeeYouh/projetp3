@@ -1,22 +1,55 @@
-@import "./Utils/_imports";
+@import "./_imports";
 
 body {
-    @include Body;
+    @include padmarg0;
+    width:   100%;
+    font-family: map-get($font-family, 'base');
+    & ul {
+        @include padmarg0;
+    }
+    & a {
+        text-decoration: none;
+        color:         black;
+    }
 }
 
 .ohmyfood, .footer {
-    height: 100px;
+    height:  100px;
     @include formatage-vertjaune;
 }
 
+.prochainement {
+    @include       tout-centrer;
+    @include       formatage-vertjaune;
+    border-radius: 15px;
+    width:         400px;
+    height:        50px;
+    margin:        10px;
+
+        & .texte-prochainement {
+            padding-right: 5px;
+            @include       font-secondaire;
+        }
+        & .points {
+            margin-top:      5%;
+            width:           $size*6;
+            height:          $size;             
+            display:         flex;
+            justify-content: space-evenly;
+            &__point {
+                @include cercle;
+                @include rebond;
+            }
+        }
+}
+
 .footer {
-    display: flex;
-    flex-direction: row;
+    display:         flex;
+    flex-direction:  row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    align-items:     center;
+    padding:         0 20px;
     & .mentions-legales, .contactez-nous {
-        @include border;
         & a {
             @include formatage-vertjaune;
             @include font-secondaire;
@@ -31,61 +64,40 @@ body {
 }
 
 .section-index {
-    @include tout-centrer;
+    @include        tout-centrer;
     flex-direction: column;
-    @include border;
 }
 
 .article-index {
-    width: 800px;
-    @include border;
+    width:          800px;
+    //@include        border;
     flex-direction: row; 
-    & ul {
+    & ul.list-menu {
         list-style-type: none;
-        @include tout-centrer;
-        flex-flow: row wrap;
+        @include         tout-centrer;
+        flex-flow:       row wrap;
         & li {
-            @include border;
-            width: 300px;
-            height: 500px;
-            margin: 20px 20px;
+            @include tout-centrer;
+            @include ombre-menu;
+            width:   300px;
+            height:  500px;
+            margin:  20px 20px;
         }
     }   
 }
 
-.prochainement {
-    @include tout-centrer;
-    @include font-secondaire;
-    @include formatage-vertjaune;
-    border-radius: 15px;
-    width: 400px;
-    height: 50px;
-    margin: 10px;
-    position: relative;
-    & ::after {
-        content: '.';
-        position: absolute;
-        right: -5px;
-        bottom: 0px;
-        transform: translateX(-50%) scaleX(0);
-        transition: transform 250ms;
-        &:hover {
-            &::after {
-                transform: translateX(-50%) scaleX(1);
-            }
-        }
-    }
-    & .texte-prochainement {
-        padding-right: 5px;
-        font-size: 2rem;
-    }
+.menu {
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;    
 }
 
 @media screen and (max-width: 750px) {
     .article-index {
         width: 100%;
         & ul {
-            @include tout-centrer;
+            @include        tout-centrer;
             flex-direction: column;
         }
     }

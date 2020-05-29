@@ -1,0 +1,15 @@
+@mixin rebond {
+    @for $i from 1 through $num-point {
+        &--#{$i} {
+            z-index:             2;
+            animation:           rebond $dur-anim ease-in-out infinite;
+            animation-direction: alternate;
+            animation-delay:     $anim-delais * $i;
+            animation-fill-mode: forwards;
+        }
+        &:hover {
+            animation-play-state: paused;
+        }
+    }    
+}
+

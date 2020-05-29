@@ -1,13 +1,133 @@
 /**Couleur de fond**/
 
-$colour-primary: #579c87;
-$colour-menunote: #fcdfdb;
-$colour-menuchic: #fff5fe;
+$colour-primary:      #579c87;
+$colour-menunote:     #fcdfdb;
+$colour-menuchic:     #fff5fe;
 $colour-menupapilles: #f9f9f9;
-$colour-menugout: #fff;
+$colour-menugout:     #fff;
+
+$background-color: (
+    'heading':  $colour-primary,
+    'note':     $colour-menunote,
+    'chic':     $colour-menuchic,
+    'papilles': $colour-menupapilles,
+    'gout':     $colour-menugout
+);
 
 /**Couleur du texte**/
 
-$colortext-primary: #fdcb46;
-$colortext-textenote: #3c1218;
-$colortext-menunote: #3c1218;
+$colortext-primary:    #fdcb46;
+$colortext-note:       #3c1218;
+$colortext-iconote-1:  #f04a5e;
+$colortext-iconote-2:  #f78f6a;
+$colortext-chic-1:     #c77412;
+$colortext-chic-2:     #906bfd;
+$colortext-chic-degrade: (
+    "background: linear-gradient ($colortext-chic-1, $colortext-chic-2)",
+);
+$colortext-papilles-1: #0431df;
+$colortext-papilles-2: #0887fb;
+$colortext-papilles-degrade: (
+    "background: linear-gradient ($colortext-papilles-1, $colortext-papilles-2)",
+);
+$colortext-gout-1:     #3d9339;
+$colortext-gout-2:     #72bf56;
+$colortext-gout-3:     #bfff7e;
+$colortext-gout-degrade: (
+    'linear-gradient': ($colortext-gout-1, $colortext-gout-2),
+);
+
+
+$color-text: (
+    'heading':            $colortext-primary,
+    'note':               $colortext-note,
+    'iconote-rose':       $colortext-iconote-1,
+    'iconote-saumon':     $colortext-iconote-2,
+    'chic-marron':        $colortext-chic-1,
+    'chic-violet':        $colortext-chic-2,
+    'chic':               $colortext-chic-degrade,
+    'papilles-bleusat':   $colortext-papilles-1,
+    'papilles-bleuclair': $colortext-papilles-2,
+    'papilles':           $colortext-papilles-degrade,
+    'gout-vertsat':       $colortext-gout-1,
+    'gout-vertpast':      $colortext-gout-1,
+    'gout-vertclair':     $colortext-gout-1,
+    'gout':               $colortext-gout-degrade
+);
+
+/** Couleur ombre **/
+
+$gris-fonce: rgba(51, 51, 51, 0.63);
+
+/**Police d'écriture**/
+
+$devonshire:     'Devonshire';
+$croissant-one:  'Croissant One';
+$dancing-script: 'Dancing Script';
+$kaushan-script: 'Kaushan Script';
+$montserrat:     'Montserrat';
+$prompt:         'Prompt';
+$caveat:         'Caveat';
+
+$font-family: (
+    'headings': $montserrat,
+    'base':     $caveat,
+    'note':     $devonshire,
+    'chic':     $croissant-one,
+    'papilles': $dancing-script,
+    'gout':     $kaushan-script,
+    'footer':   $prompt
+);
+
+/** Taille texte **/
+
+$font-size-base: 1.6rem;
+$font-size: (
+    'xxlarge': 2rem,
+    'xlarge':  1.8rem,
+    'large':   1.7rem,
+    'base':    $font-size-base,
+    'medium':  1.5rem,
+    'small':   1.3rem,
+    'xsmall':  1rem
+);
+
+
+/** Animation points Prochainement **/
+
+$size:      5px;
+$num-point: 3;
+$dur-anim:  1000ms;
+$anim-delais:$dur-anim/$num-point;
+
+
+/** Menu **/
+
+$num-menu: 5;
+
+$menu-list: (
+    'note': (
+        'bg':   map-get($background-color, 'note'),
+        'txt':  map-get($color-text, 'note'),
+        'font': map-get($font-family, 'note'),
+        'size': map-get($font-size, 'base'),
+    ),
+    'chic': (
+        'bg':   map-get($background-color, 'chic'),
+        'txt':  map-get($color-text, 'chic'),
+        'font': map-get($font-family, 'chic'),
+        'size': map-get($font-size, 'base'),
+    ),
+    'papilles': (
+        'bg':   map-get($background-color, 'papilles'),
+        'txt':  map-get($color-text, 'papilles'),
+        'font': map-get($font-family, 'papilles'),
+        'size': map-get($font-size, 'base'),
+    ),
+    'gout': (
+        'bg':   map-get($background-color, 'gout'),
+        'txt':  map-get($color-text, 'gout'),
+        'font': map-get($font-family, 'gout'),
+        'size': map-get($font-size, 'base'),
+    ),
+);
