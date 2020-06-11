@@ -22,42 +22,30 @@ $colortext-iconote-1:  #f04a5e;
 $colortext-iconote-2:  #f78f6a;
 $colortext-chic-1:     #c77412;
 $colortext-chic-2:     #906bfd;
-$colortext-chic-degrade: (
-    "background: linear-gradient ($colortext-chic-1, $colortext-chic-2)",
-);
 $colortext-papilles-1: #0431df;
 $colortext-papilles-2: #0887fb;
-$colortext-papilles-degrade: (
-    "background: linear-gradient ($colortext-papilles-1, $colortext-papilles-2)",
-);
 $colortext-gout-1:     #3d9339;
 $colortext-gout-2:     #72bf56;
 $colortext-gout-3:     #bfff7e;
-$colortext-gout-degrade: (
-    'linear-gradient': ($colortext-gout-1, $colortext-gout-2),
-);
-
 
 $color-text: (
-    'heading':            $colortext-primary,
-    'note':               $colortext-note,
-    'iconote-rose':       $colortext-iconote-1,
-    'iconote-saumon':     $colortext-iconote-2,
-    'chic-marron':        $colortext-chic-1,
-    'chic-violet':        $colortext-chic-2,
-    'chic':               $colortext-chic-degrade,
-    'papilles-bleusat':   $colortext-papilles-1,
-    'papilles-bleuclair': $colortext-papilles-2,
-    'papilles':           $colortext-papilles-degrade,
-    'gout-vertsat':       $colortext-gout-1,
-    'gout-vertpast':      $colortext-gout-1,
-    'gout-vertclair':     $colortext-gout-1,
-    'gout':               $colortext-gout-degrade
+    'heading':    $colortext-primary,
+    'note':       $colortext-note,
+    'iconote-1':  $colortext-iconote-1,
+    'iconote-2':  $colortext-iconote-2,
+    'chic-1':     $colortext-chic-1,
+    'chic-2':     $colortext-chic-2,
+    'papilles-1': $colortext-papilles-1,
+    'papilles-2': $colortext-papilles-2,
+    'gout-1':     $colortext-gout-1,
+    'gout-2':     $colortext-gout-2,
+    'gout-3':     $colortext-gout-3,
 );
 
 /** Couleur ombre **/
 
 $gris-fonce: rgba(51, 51, 51, 0.63);
+$gris-fonce-opa: rgba(51, 51, 51, 0.247);
 
 /**Police d'écriture**/
 
@@ -70,7 +58,7 @@ $prompt:         'Prompt';
 $caveat:         'Caveat';
 
 $font-family: (
-    'headings': $montserrat,
+    'heading':  $montserrat,
     'base':     $caveat,
     'note':     $devonshire,
     'chic':     $croissant-one,
@@ -82,52 +70,63 @@ $font-family: (
 /** Taille texte **/
 
 $font-size-base: 1.6rem;
+
 $font-size: (
-    'xxlarge': 2rem,
-    'xlarge':  1.8rem,
-    'large':   1.7rem,
+    'iconote': 3rem,
+    'note': 1.3rem,
+    'text-menu': 2.5rem,
+    'chic': .9rem,
+    'papilles':  1.4rem,
+    'gout':   1.4rem,
     'base':    $font-size-base,
-    'medium':  1.5rem,
-    'small':   1.3rem,
-    'xsmall':  1rem
+    'footer':  1.6rem,
+    'heading':   2rem,
 );
 
+/** Durée animation **/
+$dur-anim:  1300ms;
+$dur-transi: 200ms;
 
 /** Animation points Prochainement **/
 
 $size:      5px;
 $num-point: 3;
-$dur-anim:  1000ms;
 $anim-delais:$dur-anim/$num-point;
 
 
 /** Menu **/
 
-$num-menu: 5;
+$num-menu: 4;
 
 $menu-list: (
-    'note': (
-        'bg':   map-get($background-color, 'note'),
-        'txt':  map-get($color-text, 'note'),
-        'font': map-get($font-family, 'note'),
-        'size': map-get($font-size, 'base'),
+    note: (
+        'bg':   $colour-menunote,
+        'txt':  $colortext-note,
+        'font': $devonshire,
+        'size': $font-size-base,
     ),
-    'chic': (
-        'bg':   map-get($background-color, 'chic'),
-        'txt':  map-get($color-text, 'chic'),
-        'font': map-get($font-family, 'chic'),
-        'size': map-get($font-size, 'base'),
+    chic: (
+        'bg':     $colour-menuchic,
+        'txt':    $colortext-chic-1,
+        'txt-2':  $colortext-chic-2,
+        'font':   $croissant-one,
+        'size':   $font-size-base,
     ),
-    'papilles': (
+    papilles: (
         'bg':   map-get($background-color, 'papilles'),
         'txt':  map-get($color-text, 'papilles'),
         'font': map-get($font-family, 'papilles'),
-        'size': map-get($font-size, 'base'),
+        'size': $font-size-base,
     ),
-    'gout': (
+    gout: (
         'bg':   map-get($background-color, 'gout'),
         'txt':  map-get($color-text, 'gout'),
         'font': map-get($font-family, 'gout'),
-        'size': map-get($font-size, 'base'),
+        'size': $font-size-base,
     ),
 );
+
+/** Height **/
+
+$height-header: 100px;
+$height-footer: 70px;

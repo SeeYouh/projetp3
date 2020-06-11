@@ -1,1 +1,357 @@
-@keyframes rebond{0%{transform:scale(0)}28%{transform:scale(0)}50%{transform:scale(1.4)}62%{transform:scale(1)}100%{transform:scale(1)}}@keyframes ombre{0%{transform:scale(1)}60%{transform:scale(0.8)}100%{transform:scale(1.4)}}body{padding:0;margin:0;width:100%;font-family:"Caveat"}body ul{padding:0;margin:0}body a{text-decoration:none;color:#000}.ohmyfood,.footer{height:100px;background-color:#579c87;color:#fdcb46}.prochainement{display:flex;justify-content:center;align-items:center;background-color:#579c87;color:#fdcb46;border-radius:15px;width:400px;height:50px;margin:10px}.prochainement .texte-prochainement{padding-right:5px;font-family:"Prompt";font-size:1.8rem}.prochainement .points{margin-top:5%;width:30px;height:5px;display:flex;justify-content:space-evenly}.prochainement .points__point{border-radius:50%;background-color:#fdcb46;height:100%;width:5px}.prochainement .points__point--1{z-index:2;animation:rebond 1000ms ease-in-out infinite;animation-direction:alternate;animation-delay:333.3333333333ms;animation-fill-mode:forwards}.prochainement .points__point:hover{animation-play-state:paused}.prochainement .points__point--2{z-index:2;animation:rebond 1000ms ease-in-out infinite;animation-direction:alternate;animation-delay:666.6666666667ms;animation-fill-mode:forwards}.prochainement .points__point:hover{animation-play-state:paused}.prochainement .points__point--3{z-index:2;animation:rebond 1000ms ease-in-out infinite;animation-direction:alternate;animation-delay:1000ms;animation-fill-mode:forwards}.prochainement .points__point:hover{animation-play-state:paused}.footer{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:0 20px}.footer .mentions-legales a,.footer .contactez-nous a{background-color:#579c87;color:#fdcb46;font-family:"Prompt";font-size:1.8rem;position:relative;padding:1rem 0 .5rem;margin:0 1.5rem;color:#fdcb46;text-decoration:none}.footer .mentions-legales a::after,.footer .contactez-nous a::after{content:"";position:absolute;left:50%;bottom:10px;transform:translateX(-50%) scaleX(0);width:100%;height:2px;background-color:#fdcb46;transition:transform 250ms}.footer .mentions-legales a:hover::after,.footer .contactez-nous a:hover::after{transform-origin:0% 50%;transform:translateX(-50%) scaleX(1)}.ohmyfood{font-family:"Montserrat";font-size:2rem;display:flex;justify-content:center;align-items:center}.section-index{display:flex;justify-content:center;align-items:center;flex-direction:column}.article-index{width:800px;flex-direction:row}.article-index ul.list-menu{list-style-type:none;display:flex;justify-content:center;align-items:center;flex-flow:row wrap}.article-index ul.list-menu li{display:flex;justify-content:center;align-items:center;box-shadow:0 0px 5px 2px rgba(51,51,51,.63);width:300px;height:500px;margin:20px 20px}.menu{display:flex;flex-direction:column;justify-content:center;align-items:center}@media screen and (max-width: 750px){.article-index{width:100%}.article-index ul{display:flex;justify-content:center;align-items:center;flex-direction:column}}/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/**Couleur de fond**/
+/**Couleur du texte**/
+/** Couleur ombre **/
+/**Police d'écriture**/
+/** Taille texte **/
+/** Durée animation **/
+/** Animation points Prochainement **/
+/** Menu **/
+/** Height **/
+@font-face {
+  font-family: "prompt";
+  src: url("prompt-semibold-webfont.woff2") format("woff2"), url("prompt-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes rebond {
+  0% {
+    transform: scale(0);
+  }
+  28% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  62% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ombre {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/** Mise en page Header & Footer **/
+/** Flex **/
+/** Bordure **/
+/** Cercle **/
+/** Menu **/
+/** Ombre **/
+/** Taille texte **/
+/** Formatage titre H2 Menu **/
+.footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  z-index: 10;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.footer .mentions-legales a, .footer .contactez-nous a {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: "Prompt";
+  font-size: 1.6rem;
+  position: relative;
+  padding: 0.5rem 0 0.5rem;
+  margin: 0 0.5rem;
+  color: #fdcb46;
+  text-decoration: none;
+}
+.footer .mentions-legales a::after, .footer .contactez-nous a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 2px;
+  background-color: #fdcb46;
+  transition: transform 250ms;
+}
+.footer .mentions-legales a:hover::after, .footer .contactez-nous a:hover::after {
+  transform-origin: 0% 50%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.ohmyfood {
+  height: 100px;
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+}
+.ohmyfood:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+}
+
+.section-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.article-index {
+  width: 800px;
+  flex-direction: row;
+}
+.article-index ul.list-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.article-index ul.list-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 5px 2px rgba(51, 51, 51, 0.63);
+  border: 1px solid #0000003f;
+  margin: 20px 20px;
+  transform: scale(1);
+  transition: all 200ms;
+}
+.article-index ul.list-menu li:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 10px 3px rgba(51, 51, 51, 0.247);
+}
+
+h3 {
+  margin-top: 2rem;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: "Caveat";
+}
+
+.prochainement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #579c87;
+  color: #fdcb46;
+  border-radius: 15px;
+  width: 400px;
+  height: 50px;
+  margin: 10px;
+}
+.prochainement .texte-prochainement {
+  padding-right: 5px;
+  font-family: "Prompt";
+  font-size: 1.6rem;
+}
+.prochainement .points {
+  margin-top: 5%;
+  width: 30px;
+  height: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.prochainement .points__point {
+  border-radius: 50%;
+  background-color: #fdcb46;
+  height: 100%;
+  width: 5px;
+}
+.prochainement .points__point--1 {
+  z-index: 2;
+  animation: rebond 1300ms ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 433.3333333333ms;
+  animation-fill-mode: forwards;
+}
+.prochainement .points__point:hover {
+  animation-play-state: paused;
+}
+.prochainement .points__point--2 {
+  z-index: 2;
+  animation: rebond 1300ms ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 866.6666666667ms;
+  animation-fill-mode: forwards;
+}
+.prochainement .points__point:hover {
+  animation-play-state: paused;
+}
+.prochainement .points__point--3 {
+  z-index: 2;
+  animation: rebond 1300ms ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 1300ms;
+  animation-fill-mode: forwards;
+}
+.prochainement .points__point:hover {
+  animation-play-state: paused;
+}
+
+/** index.html **/
+.menu__note, .menu__chic, .menu__papilles, .menu__gout {
+  width: 300px;
+  height: 500px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu__note {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: "Devonshire";
+  font-size: 1.3rem;
+}
+.menu__note .text-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu__note .iconote {
+  font-size: 3rem;
+  background: linear-gradient(to right, #f04a5e, #f78f6a);
+  background-color: linear-gradient(to right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__note h3 {
+  text-transform: uppercase;
+}
+
+.menu__chic {
+  background-color: #fff5fe;
+  font-family: "Croissant One";
+  font-size: 0.9rem;
+}
+.menu__chic .text-chic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: -webkit-linear-gradient(left, #c77412, #906bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__chic h3 {
+  font-family: "Croissant One";
+  color: #c77412;
+}
+
+.menu__papilles {
+  background-color: #f9f9f9;
+  font-family: "Dancing Script";
+  font-size: 1.4rem;
+}
+.menu__papilles .text-papilles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: -webkit-linear-gradient(left, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__papilles h3 {
+  color: #0431df;
+}
+
+.menu__gout {
+  background-color: #fff;
+  font-family: "Kaushan Script";
+  font-size: 1.4rem;
+}
+.menu__gout .text-gout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: -webkit-linear-gradient(left, #3d9339, #72bf56, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__gout h3 {
+  color: #3d9339;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Caveat";
+}
+body ul, body h1, body h2, body h3 {
+  padding: 0;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .article-index {
+    width: 100%;
+  }
+  .article-index ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0000003f;
+  flex-direction: column;
+}
+
+.__note {
+  border: 1px solid #0000003f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 900px;
+  height: 1200px;
+}
+.__note h2 {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  color: rgba(51, 51, 51, 0.63);
+}
+
+/*# sourceMappingURL=style.css.map */

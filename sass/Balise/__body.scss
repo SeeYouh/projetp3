@@ -1,0 +1,12 @@
+body {
+    @include padmarg0;
+    width:   100%;
+    font-family: map-get($font-family, 'base');
+    & ul, h1, h2,h3 {
+        @include padmarg0;
+    }
+    & a {
+        text-decoration: none;
+        color:         black;
+    }
+}

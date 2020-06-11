@@ -1,0 +1,99 @@
+/** index.html **/
+
+.menu__note,.menu__chic, .menu__papilles, .menu__gout {
+    @include        taille-menu;
+    @include        texte-menu;
+    @include        tout-centrer;   
+    flex-direction: column;
+}
+.menu__note {
+    background-color: map-get($background-color, 'note' );
+    color:            map-get($color-text, 'note');
+    font-family:      map-get($font-family, 'note');
+    font-size:        map-get($font-size,'note');
+    & .text-note {
+        @include        tout-centrer; 
+        flex-direction: column;  
+    }
+    & .iconote {
+        font-size:               map-get($font-size, 'iconote');
+        background:              linear-gradient(to right, #f04a5e, #f78f6a);
+        background-color:        linear-gradient(to right, #f04a5e, #f78f6a);
+        -webkit-background-clip: text;
+        color:                   transparent;
+    }
+    & h3 {
+        text-transform: uppercase;
+    }
+}
+
+.menu__chic {
+    background-color: map-get($background-color, 'chic' );
+    color:            map-get($color-text, 'chic');
+    font-family:      map-get($font-family, 'chic');
+    font-size:        map-get($font-size,'chic');
+    & .text-chic {
+        @include                 tout-centrer; 
+        flex-direction:          column;  
+        background:              -webkit-linear-gradient(left, $colortext-chic-1, $colortext-chic-2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    & h3 {
+        font-family: map-get($map: $font-family, $key: 'chic');
+        color:       map-get($map: $color-text, $key: 'chic-1');
+    }
+}
+
+.menu__papilles {
+    background-color: map-get($background-color, 'papilles' );
+    color:            map-get($color-text, 'papilles');
+    font-family:      map-get($font-family, 'papilles');
+    font-size:        map-get($font-size,'papilles');
+    & .text-papilles {
+        @include                 tout-centrer; 
+        flex-direction:          column;  
+        background:              -webkit-linear-gradient(left, $colortext-papilles-1, $colortext-papilles-2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    & h3 {
+        color: map-get($map: $color-text, $key: 'papilles-1');
+    }
+
+}
+
+.menu__gout {
+    background-color: map-get($background-color, 'gout' );
+    color:            map-get($color-text, 'gout');
+    font-family:      map-get($font-family, 'gout');
+    font-size:        map-get($font-size,'gout');
+    & .text-gout {
+        @include                 tout-centrer; 
+        flex-direction:          column;  
+        background:              -webkit-linear-gradient(left, $colortext-gout-1, $colortext-gout-2, $colortext-gout-3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    & h3 {
+        color: map-get($map: $color-text, $key: 'gout-1');
+    }
+
+}
+
+@each $text, $valeur in $font-size {
+    .menu__#{$text} {
+        font-size: map-get($font-size, $valeur);
+    }
+}
+
+@mixin menu-list($restau) {
+    @each $restau, $value in $menu-list {
+        .menu-#{restau} {
+            background-color: map-get($value, 'bg') ;
+            color:            map-get($value, 'txt');
+            font-family:      map-get($value, 'font');
+            font-size:        map-get($value, 'size');
+        }
+    }
+}

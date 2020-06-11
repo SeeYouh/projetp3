@@ -1,104 +1,27 @@
-@import "./_imports";
+@import 
+    "./Utils/variables";
 
-body {
-    @include padmarg0;
-    width:   100%;
-    font-family: map-get($font-family, 'base');
-    & ul {
-        @include padmarg0;
-    }
-    & a {
-        text-decoration: none;
-        color:         black;
-    }
-}
+@import 
+    "./Base/_fonts",
+    "./Base/_keyframes",
+    "./Base/_background";
 
-.ohmyfood, .footer {
-    height:  100px;
-    @include formatage-vertjaune;
-}
+@import 
+    "./Components/_bouton",
+    "./Components/_animation";
 
-.prochainement {
-    @include       tout-centrer;
-    @include       formatage-vertjaune;
-    border-radius: 15px;
-    width:         400px;
-    height:        50px;
-    margin:        10px;
+@import
+    "./Balise/_footer",
+    "./Balise/_header",
+    "./Balise/_global",
+    "./Balise/_menu",
+    "./Balise/_body";
 
-        & .texte-prochainement {
-            padding-right: 5px;
-            @include       font-secondaire;
-        }
-        & .points {
-            margin-top:      5%;
-            width:           $size*6;
-            height:          $size;             
-            display:         flex;
-            justify-content: space-evenly;
-            &__point {
-                @include cercle;
-                @include rebond;
-            }
-        }
-}
+@import
+    "./Layouts/_media";
 
-.footer {
-    display:         flex;
-    flex-direction:  row;
-    justify-content: space-between;
-    align-items:     center;
-    padding:         0 20px;
-    & .mentions-legales, .contactez-nous {
-        & a {
-            @include formatage-vertjaune;
-            @include font-secondaire;
-            @include bouton-footer;
-        }
-    }
-}
-
-.ohmyfood {
-        @include font-primary;
-        @include tout-centrer;
-}
-
-.section-index {
-    @include        tout-centrer;
-    flex-direction: column;
-}
-
-.article-index {
-    width:          800px;
-    //@include        border;
-    flex-direction: row; 
-    & ul.list-menu {
-        list-style-type: none;
-        @include         tout-centrer;
-        flex-flow:       row wrap;
-        & li {
-            @include tout-centrer;
-            @include ombre-menu;
-            width:   300px;
-            height:  500px;
-            margin:  20px 20px;
-        }
-    }   
-}
-
-.menu {
-    display:         flex;
-    flex-direction:  column;
-    justify-content: center;
-    align-items:     center;    
-}
-
-@media screen and (max-width: 750px) {
-    .article-index {
-        width: 100%;
-        & ul {
-            @include        tout-centrer;
-            flex-direction: column;
-        }
-    }
-}
+@import
+    "./menu-scss/_chic",
+    "./menu-scss/_gout",
+    "./menu-scss/_note",
+    "./menu-scss/_papilles";

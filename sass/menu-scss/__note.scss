@@ -1,0 +1,16 @@
+.__section {
+    @include tout-centrer;
+    @include border;
+    flex-direction: column;
+}
+
+.__note {
+    @include border;
+    @include tout-centrer;
+    flex-direction: column;
+    width: 900px;
+    height: 1200px;
+    & h2 {
+        @include titre-menu;
+    }
+}
