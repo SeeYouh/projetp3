@@ -10,7 +10,43 @@
 /** Height **/
 @font-face {
   font-family: "prompt";
-  src: url("prompt-semibold-webfont.woff2") format("woff2"), url("prompt-semibold-webfont.woff") format("woff");
+  src: url("/sources/fonts/prompt/Prompt-SemiBoldItalic.ttf") format("ttf"), url("/sources/fonts/prompt/prompt-semibold-webfont.woff2") format("woff2"), url("/sources/fonts/prompt/prompt-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "croissant";
+  src: url("/sources/fonts/croissant/CroissantOne-Regular.ttf") format("ttf"), url("/sources/fonts/croissant/croissantone-regular-webfont.woff2") format("woff2"), url("/sources/fonts/croissant/croissantone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("/sources/fonts/montserrat/Montserrat-Black.ttf") format("ttf"), url("/sources/fonts/montserrat/montserrat-black-webfont.woff2") format("woff2"), url("/sources/fonts/montserrat/montserrat-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kaushan";
+  src: url("/sources/fonts/kaushan/KaushanScript-Regular.ttf") format("ttf"), url("/sources/fonts/kaushan/kaushanscript-regular-webfont.woff2") format("woff2"), url("/sources/fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "devonshire";
+  src: url("/sources/fonts/devonshire/Devonshire-Regular.ttf") format("ttf"), url("/sources/fonts/devonshire/devonshire-regular-webfont.woff2") format("woff2"), url("/sources/fonts/devonshire/devonshire-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dancing";
+  src: url("/sources/fonts/dancing/DancingScript-VariableFont_wght.ttf") format("ttf"), url("/sources/fonts/dancing/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("/sources/fonts/dancing/dancingscript-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "caveat";
+  src: url("/sources/fonts/caveat/Caveat-Regular.ttf") format("ttf"), url("/sources/fonts/caveat/caveat-regular-webfont.woff2") format("woff2"), url("/sources/fonts/caveat/caveat-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -76,7 +112,7 @@
 .footer .mentions-legales a, .footer .contactez-nous a {
   background-color: #579c87;
   color: #fdcb46;
-  font-family: "Prompt";
+  font-family: "prompt";
   font-size: 1.6rem;
   position: relative;
   padding: 0.5rem 0 0.5rem;
@@ -104,7 +140,7 @@
   height: 100px;
   background-color: #579c87;
   color: #fdcb46;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -153,7 +189,7 @@ h3 {
   margin-top: 2rem;
   font-weight: bolder;
   font-size: 2.5rem;
-  font-family: "Caveat";
+  font-family: "caveat";
 }
 
 .prochainement {
@@ -169,7 +205,7 @@ h3 {
 }
 .prochainement .texte-prochainement {
   padding-right: 5px;
-  font-family: "Prompt";
+  font-family: "prompt";
   font-size: 1.6rem;
 }
 .prochainement .points {
@@ -216,6 +252,13 @@ h3 {
   animation-play-state: paused;
 }
 
+.__section h2 {
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.63);
+}
+
 /** index.html **/
 .menu__note, .menu__chic, .menu__papilles, .menu__gout {
   width: 300px;
@@ -230,7 +273,7 @@ h3 {
 .menu__note {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: "Devonshire";
+  font-family: "devonshire";
   font-size: 1.3rem;
 }
 .menu__note .text-note {
@@ -252,7 +295,7 @@ h3 {
 
 .menu__chic {
   background-color: #fff5fe;
-  font-family: "Croissant One";
+  font-family: "croissant";
   font-size: 0.9rem;
 }
 .menu__chic .text-chic {
@@ -265,13 +308,13 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 .menu__chic h3 {
-  font-family: "Croissant One";
+  font-family: "croissant";
   color: #c77412;
 }
 
 .menu__papilles {
   background-color: #f9f9f9;
-  font-family: "Dancing Script";
+  font-family: "dancing";
   font-size: 1.4rem;
 }
 .menu__papilles .text-papilles {
@@ -289,7 +332,7 @@ h3 {
 
 .menu__gout {
   background-color: #fff;
-  font-family: "Kaushan Script";
+  font-family: "kaushan";
   font-size: 1.4rem;
 }
 .menu__gout .text-gout {
@@ -309,7 +352,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: "Caveat";
+  font-family: "caveat";
 }
 body ul, body h1, body h2, body h3 {
   padding: 0;
@@ -349,7 +392,7 @@ body a {
   height: 1200px;
 }
 .__note h2 {
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-size: 1.6rem;
   color: rgba(51, 51, 51, 0.63);
 }

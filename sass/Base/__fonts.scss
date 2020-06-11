@@ -1,13 +1,66 @@
 
 @font-face {
     font-family: 'prompt';
-    src: url('prompt-semibold-webfont.woff2') format('woff2'),
-         url('prompt-semibold-webfont.woff') format('woff');
+    src: url('/sources/fonts/prompt/Prompt-SemiBoldItalic.ttf') format('ttf'),
+         url('/sources/fonts/prompt/prompt-semibold-webfont.woff2') format('woff2'),
+         url('/sources/fonts/prompt/prompt-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'croissant';
+    src: url('/sources/fonts/croissant/CroissantOne-Regular.ttf') format('ttf'),
+         url('/sources/fonts/croissant/croissantone-regular-webfont.woff2') format('woff2'),
+         url('/sources/fonts/croissant/croissantone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'montserrat';
+    src: url('/sources/fonts/montserrat/Montserrat-Black.ttf') format('ttf'),
+         url('/sources/fonts/montserrat/montserrat-black-webfont.woff2') format('woff2'),
+         url('/sources/fonts/montserrat/montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kaushan';
+    src: url('/sources/fonts/kaushan/KaushanScript-Regular.ttf') format('ttf'),
+         url('/sources/fonts/kaushan/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('/sources/fonts/kaushan/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'devonshire';
+    src: url('/sources/fonts/devonshire/Devonshire-Regular.ttf') format('ttf'),
+         url('/sources/fonts/devonshire/devonshire-regular-webfont.woff2') format('woff2'),
+         url('/sources/fonts/devonshire/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dancing';
+    src: url('/sources/fonts/dancing/DancingScript-VariableFont_wght.ttf') format('ttf'),
+         url('/sources/fonts/dancing/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/sources/fonts/dancing/dancingscript-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caveat';
+    src: url('/sources/fonts/caveat/Caveat-Regular.ttf') format('ttf'),
+         url('/sources/fonts/caveat/caveat-regular-webfont.woff2') format('woff2'),
+         url('/sources/fonts/caveat/caveat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @mixin font-secondaire {
     font-family: map-get($font-family, 'footer');

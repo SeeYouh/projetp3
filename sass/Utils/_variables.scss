@@ -49,13 +49,13 @@ $gris-fonce-opa: rgba(51, 51, 51, 0.247);
 
 /**Police d'écriture**/
 
-$devonshire:     'Devonshire';
-$croissant-one:  'Croissant One';
-$dancing-script: 'Dancing Script';
-$kaushan-script: 'Kaushan Script';
-$montserrat:     'Montserrat';
-$prompt:         'Prompt';
-$caveat:         'Caveat';
+$devonshire:     'devonshire';
+$croissant-one:  'croissant';
+$dancing-script: 'dancing';
+$kaushan-script: 'kaushan';
+$montserrat:     'montserrat';
+$prompt:         'prompt';
+$caveat:         'caveat';
 
 $font-family: (
     'heading':  $montserrat,
@@ -81,6 +81,7 @@ $font-size: (
     'base':    $font-size-base,
     'footer':  1.6rem,
     'heading':   2rem,
+    'titre-menu': 4rem,
 );
 
 /** Durée animation **/

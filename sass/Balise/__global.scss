@@ -57,3 +57,12 @@ h3 {
             }
         }
 }
+
+.__section {
+    & h2 {
+        padding-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: map-get($map: $font-size, $key: 'titre-menu');
+        color: darken($gris-fonce, 50);
+    }
+}
