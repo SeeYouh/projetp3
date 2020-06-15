@@ -7,20 +7,13 @@
     flex-direction: column;
 }
 .menu__note {
-    background-color: map-get($background-color, 'note' );
-    color:            map-get($color-text, 'note');
-    font-family:      map-get($font-family, 'note');
-    font-size:        map-get($font-size,'note');
+    @include __note;
     & .text-note {
         @include        tout-centrer; 
         flex-direction: column;  
     }
     & .iconote {
-        font-size:               map-get($font-size, 'iconote');
-        background:              linear-gradient(to right, #f04a5e, #f78f6a);
-        background-color:        linear-gradient(to right, #f04a5e, #f78f6a);
-        -webkit-background-clip: text;
-        color:                   transparent;
+        @include iconote;
     }
     & h3 {
         text-transform: uppercase;

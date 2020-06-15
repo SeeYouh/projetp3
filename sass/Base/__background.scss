@@ -46,16 +46,38 @@
     box-shadow: 0 0px 5px 2px $gris-fonce;
 }
 
+@mixin ombre-menu-2 {
+    box-shadow: 0 0px 15px 2px $gris-fonce-opa;
+}
+
 /** Taille texte **/
 
 @mixin texte-menu {
     font-size: $font-size-base;
 }
 
-/** Formatage titre H2 Menu **/
+/** Formatage titre Menu **/
 
 @mixin titre-menu {
     font-family: $montserrat;
     font-size: map-get($map: $font-size, $key: 'footer');
     color: $gris-fonce;
+}
+
+@mixin __note {
+    background-color: map-get($background-color, 'note' );
+    color:            map-get($color-text, 'note');
+    font-family:      map-get($font-family, 'note');
+    font-size:        map-get($font-size,'note');
+}
+
+/** Dégradé **/
+
+@mixin iconote {
+    margin-right: 15px;
+    font-size:               map-get($font-size, 'iconote');
+    background:              linear-gradient(to right, #f04a5e, #f78f6a);
+    background-color:        linear-gradient(to right, #f04a5e, #f78f6a);
+    -webkit-background-clip: text;
+    color:                   transparent;
 }

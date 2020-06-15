@@ -93,7 +93,8 @@
 /** Menu **/
 /** Ombre **/
 /** Taille texte **/
-/** Formatage titre H2 Menu **/
+/** Formatage titre Menu **/
+/** Dégradé **/
 .footer {
   background-color: #579c87;
   color: #fdcb46;
@@ -113,7 +114,7 @@
   background-color: #579c87;
   color: #fdcb46;
   font-family: "prompt";
-  font-size: 1.6rem;
+  font-size: 1.6em;
   position: relative;
   padding: 0.5rem 0 0.5rem;
   margin: 0 0.5rem;
@@ -141,7 +142,7 @@
   background-color: #579c87;
   color: #fdcb46;
   font-family: "montserrat";
-  font-size: 2rem;
+  font-size: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +189,7 @@
 h3 {
   margin-top: 2rem;
   font-weight: bolder;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-family: "caveat";
 }
 
@@ -206,7 +207,7 @@ h3 {
 .prochainement .texte-prochainement {
   padding-right: 5px;
   font-family: "prompt";
-  font-size: 1.6rem;
+  font-size: 1.6em;
 }
 .prochainement .points {
   margin-top: 5%;
@@ -254,16 +255,72 @@ h3 {
 
 .__section h2 {
   padding-top: 50px;
+  margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 4em;
   color: rgba(0, 0, 0, 0.63);
+}
+
+.titre-menu {
+  margin-top: 50px;
+  padding-bottom: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titre-menu-bas {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titre-menu-bas .iconote {
+  font-size: 3rem;
+}
+
+table {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 2em;
+}
+table tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+table td {
+  padding-bottom: 5px;
+}
+table th {
+  font-size: 2.5em;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titre-tableau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px 20px 80px;
+  font-size: 2.5em;
+}
+
+.trait {
+  width: 35%;
 }
 
 /** index.html **/
 .menu__note, .menu__chic, .menu__papilles, .menu__gout {
   width: 300px;
   height: 500px;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,7 +331,7 @@ h3 {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "devonshire";
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 .menu__note .text-note {
   display: flex;
@@ -283,7 +340,8 @@ h3 {
   flex-direction: column;
 }
 .menu__note .iconote {
-  font-size: 3rem;
+  margin-right: 15px;
+  font-size: 3em;
   background: linear-gradient(to right, #f04a5e, #f78f6a);
   background-color: linear-gradient(to right, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
@@ -296,7 +354,7 @@ h3 {
 .menu__chic {
   background-color: #fff5fe;
   font-family: "croissant";
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 .menu__chic .text-chic {
   display: flex;
@@ -315,7 +373,7 @@ h3 {
 .menu__papilles {
   background-color: #f9f9f9;
   font-family: "dancing";
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 .menu__papilles .text-papilles {
   display: flex;
@@ -333,7 +391,7 @@ h3 {
 .menu__gout {
   background-color: #fff;
   font-family: "kaushan";
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 .menu__gout .text-gout {
   display: flex;
@@ -354,7 +412,7 @@ body {
   width: 100%;
   font-family: "caveat";
 }
-body ul, body h1, body h2, body h3 {
+body ul, body h1, body h2, body h3, body p {
   padding: 0;
   margin: 0;
 }
@@ -374,6 +432,15 @@ body a {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1130px) {
+  .__section .__note {
+    width: 90%;
+    height: 90%;
+  }
+  .__section h2 {
+    display: none;
+  }
+}
 .__section {
   display: flex;
   justify-content: center;
@@ -383,18 +450,35 @@ body a {
 }
 
 .__note {
-  border: 1px solid #0000003f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 0px 15px 2px rgba(51, 51, 51, 0.247);
+  margin-bottom: 90px;
   flex-direction: column;
-  width: 900px;
+  width: 1100px;
   height: 1200px;
+  background-color: #fcdfdb;
 }
-.__note h2 {
-  font-family: "montserrat";
-  font-size: 1.6rem;
-  color: rgba(51, 51, 51, 0.63);
+.__note .iconote {
+  margin-right: 15px;
+  font-size: 3em;
+  background: linear-gradient(to right, #f04a5e, #f78f6a);
+  background-color: linear-gradient(to right, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+}
+.__note h3 {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: "devonshire";
+  font-size: 1.3em;
+  font-size: 4em;
+}
+.__note th p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.__note .titre-tableau, .__note table {
+  color: #3c1218;
 }
 
 /*# sourceMappingURL=style.css.map */

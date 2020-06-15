@@ -69,19 +69,20 @@ $font-family: (
 
 /** Taille texte **/
 
-$font-size-base: 1.6rem;
+$font-size-base: 1.6em;
 
 $font-size: (
-    'iconote': 3rem,
-    'note': 1.3rem,
-    'text-menu': 2.5rem,
-    'chic': .9rem,
-    'papilles':  1.4rem,
-    'gout':   1.4rem,
+    'iconote': 3em,
+    'note': 1.3em,
+    'text-menu': 2.5em,
+    'text-tableau': 2em,
+    'chic': .9em,
+    'papilles':  1.4em,
+    'gout':   1.4em,
     'base':    $font-size-base,
-    'footer':  1.6rem,
-    'heading':   2rem,
-    'titre-menu': 4rem,
+    'footer':  1.6em,
+    'heading':   2em,
+    'titre-menu': 4em,
 );
 
 /** Durée animation **/
