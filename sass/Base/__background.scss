@@ -60,7 +60,7 @@
 
 @mixin titre-menu {
     font-family: $montserrat;
-    font-size: map-get($map: $font-size, $key: 'footer');
+    font-size: map-get($font-size, 'footer');
     color: $gris-fonce;
 }
 
@@ -69,6 +69,13 @@
     color:            map-get($color-text, 'note');
     font-family:      map-get($font-family, 'note');
     font-size:        map-get($font-size,'note');
+}
+
+@mixin __chic {
+    background-color: map-get($background-color, 'chic' );
+    color:            map-get($color-text, 'chic');
+    font-family:      map-get($font-family, 'chic');
+    font-size:        map-get($font-size,'chic');
 }
 
 /** Dégradé **/

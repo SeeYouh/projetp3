@@ -110,18 +110,16 @@
   align-items: center;
   padding: 0 20px;
 }
-.footer .mentions-legales a, .footer .contactez-nous a {
-  background-color: #579c87;
-  color: #fdcb46;
+.footer .lien-a {
   font-family: "prompt";
-  font-size: 1.6em;
+  font-size: 4vw;
   position: relative;
   padding: 0.5rem 0 0.5rem;
   margin: 0 0.5rem;
   color: #fdcb46;
   text-decoration: none;
 }
-.footer .mentions-legales a::after, .footer .contactez-nous a::after {
+.footer .lien-a::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -132,7 +130,7 @@
   background-color: #fdcb46;
   transition: transform 250ms;
 }
-.footer .mentions-legales a:hover::after, .footer .contactez-nous a:hover::after {
+.footer .lien-a:hover::after {
   transform-origin: 0% 50%;
   transform: translateX(-50%) scaleX(1);
 }
@@ -142,7 +140,7 @@
   background-color: #579c87;
   color: #fdcb46;
   font-family: "montserrat";
-  font-size: 2em;
+  font-size: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,7 +187,7 @@
 h3 {
   margin-top: 2rem;
   font-weight: bolder;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-family: "caveat";
 }
 
@@ -207,7 +205,7 @@ h3 {
 .prochainement .texte-prochainement {
   padding-right: 5px;
   font-family: "prompt";
-  font-size: 1.6em;
+  font-size: 4vw;
 }
 .prochainement .points {
   margin-top: 5%;
@@ -224,40 +222,31 @@ h3 {
 }
 .prochainement .points__point--1 {
   z-index: 2;
-  animation: rebond 1300ms ease-in-out infinite;
+  animation: rebond 1100ms infinite;
   animation-direction: alternate;
-  animation-delay: 433.3333333333ms;
+  animation-delay: 366.6666666667ms;
   animation-fill-mode: forwards;
-}
-.prochainement .points__point:hover {
-  animation-play-state: paused;
 }
 .prochainement .points__point--2 {
   z-index: 2;
-  animation: rebond 1300ms ease-in-out infinite;
+  animation: rebond 1100ms infinite;
   animation-direction: alternate;
-  animation-delay: 866.6666666667ms;
+  animation-delay: 733.3333333333ms;
   animation-fill-mode: forwards;
-}
-.prochainement .points__point:hover {
-  animation-play-state: paused;
 }
 .prochainement .points__point--3 {
   z-index: 2;
-  animation: rebond 1300ms ease-in-out infinite;
+  animation: rebond 1100ms infinite;
   animation-direction: alternate;
-  animation-delay: 1300ms;
+  animation-delay: 1100ms;
   animation-fill-mode: forwards;
-}
-.prochainement .points__point:hover {
-  animation-play-state: paused;
 }
 
 .__section h2 {
   padding-top: 50px;
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4em;
+  font-size: 4rem;
   color: rgba(0, 0, 0, 0.63);
 }
 
@@ -284,7 +273,7 @@ table {
   width: 100%;
   padding-left: 80px;
   padding-right: 80px;
-  font-size: 2em;
+  font-size: 2rem;
 }
 table tr {
   display: flex;
@@ -295,7 +284,7 @@ table td {
   padding-bottom: 5px;
 }
 table th {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding-top: 50px;
   padding-bottom: 15px;
   display: flex;
@@ -309,7 +298,7 @@ table th {
   align-items: center;
   justify-content: space-between;
   padding: 50px 80px 20px 80px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 .trait {
@@ -331,7 +320,7 @@ table th {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "devonshire";
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 .menu__note .text-note {
   display: flex;
@@ -341,7 +330,7 @@ table th {
 }
 .menu__note .iconote {
   margin-right: 15px;
-  font-size: 3em;
+  font-size: 3rem;
   background: linear-gradient(to right, #f04a5e, #f78f6a);
   background-color: linear-gradient(to right, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
@@ -354,26 +343,26 @@ table th {
 .menu__chic {
   background-color: #fff5fe;
   font-family: "croissant";
-  font-size: 0.9em;
-}
-.menu__chic .text-chic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: -webkit-linear-gradient(left, #c77412, #906bfd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 0.9rem;
 }
 .menu__chic h3 {
   font-family: "croissant";
   color: #c77412;
 }
 
+.text-chic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(left, #c77412, #906bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .menu__papilles {
   background-color: #f9f9f9;
   font-family: "dancing";
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 .menu__papilles .text-papilles {
   display: flex;
@@ -391,7 +380,7 @@ table th {
 .menu__gout {
   background-color: #fff;
   font-family: "kaushan";
-  font-size: 1.4em;
+  font-size: 1.5rem;
 }
 .menu__gout .text-gout {
   display: flex;
@@ -404,6 +393,25 @@ table th {
 }
 .menu__gout h3 {
   color: #3d9339;
+}
+
+.bg-menu {
+  box-shadow: 0 0px 15px 2px rgba(51, 51, 51, 0.247);
+  flex-direction: column;
+  place-content: space-between center;
+  width: 1100px;
+  height: 1200px;
+  margin-bottom: 90px;
+}
+
+.text-menu {
+  border: 1px solid #0000003f;
+  position: relative;
+  width: 500px;
+  height: 80px;
+  display: flex;
+  place-content: space-around center;
+  flex-flow: column wrap;
 }
 
 body {
@@ -433,7 +441,7 @@ body a {
   }
 }
 @media screen and (max-width: 1130px) {
-  .__section .__note {
+  .__section .__note, .__section .__chic {
     width: 90%;
     height: 90%;
   }
@@ -441,6 +449,58 @@ body a {
     display: none;
   }
 }
+@media screen and (min-width: 750px) {
+  /** Header & Footer **/
+  .text-ohmy {
+    font-size: 5rem;
+  }
+
+  .footer .lien-a {
+    font-size: 1.5rem;
+  }
+
+  /** Index.html **/
+  .prochainement .texte-prochainement {
+    font-size: 1.5rem;
+  }
+
+  /** Menu note **/
+  /** Menu chic **/
+  /** Menu papille **/
+  /** Menu gout **/
+}
+.__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__chic {
+  box-shadow: 0 0px 15px 2px rgba(51, 51, 51, 0.247);
+  margin-bottom: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  height: 1200px;
+  background-color: #fff5fe;
+  font-size: 0.9rem;
+  font-family: "croissant";
+}
+.__chic h3 {
+  margin-top: 10px;
+  font-size: 4rem;
+  font-family: "croissant";
+}
+.__chic p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.__chic .titre-tableau, .__chic table {
+  color: #c77412;
+}
+
 .__section {
   display: flex;
   justify-content: center;
@@ -450,16 +510,11 @@ body a {
 }
 
 .__note {
-  box-shadow: 0 0px 15px 2px rgba(51, 51, 51, 0.247);
-  margin-bottom: 90px;
-  flex-direction: column;
-  width: 1100px;
-  height: 1200px;
   background-color: #fcdfdb;
 }
 .__note .iconote {
   margin-right: 15px;
-  font-size: 3em;
+  font-size: 3rem;
   background: linear-gradient(to right, #f04a5e, #f78f6a);
   background-color: linear-gradient(to right, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
@@ -470,8 +525,8 @@ body a {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "devonshire";
-  font-size: 1.3em;
-  font-size: 4em;
+  font-size: 1.3rem;
+  font-size: 4rem;
 }
 .__note th p {
   margin-left: 15px;

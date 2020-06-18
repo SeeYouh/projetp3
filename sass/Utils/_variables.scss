@@ -44,7 +44,7 @@ $color-text: (
 
 /** Couleur ombre **/
 
-$gris-fonce: rgba(51, 51, 51, 0.63);
+$gris-fonce:     rgba(51, 51, 51, 0.63);
 $gris-fonce-opa: rgba(51, 51, 51, 0.247);
 
 /**Police d'écriture**/
@@ -72,21 +72,24 @@ $font-family: (
 $font-size-base: 1.6em;
 
 $font-size: (
-    'iconote': 3em,
-    'note': 1.3em,
-    'text-menu': 2.5em,
-    'text-tableau': 2em,
-    'chic': .9em,
-    'papilles':  1.4em,
-    'gout':   1.4em,
-    'base':    $font-size-base,
-    'footer':  1.6em,
-    'heading':   2em,
-    'titre-menu': 4em,
+    'iconote':      3rem,
+    'note':         1.3rem,
+    'text-menu':    2.5rem,
+    'text-tableau': 2rem,
+    'chic':         .9rem,
+    'chic-menu':    .9rem,
+    'papilles':     1.4rem,
+    'gout':         1.5rem,
+    'base':         $font-size-base,
+    'footer':       4vw,
+    'footer-750':   1.5rem,
+    'heading':      5vw,
+    'heading-750':  5rem,
+    'titre-menu':   4rem,
 );
 
 /** Durée animation **/
-$dur-anim:  1300ms;
+$dur-anim:   1100ms;
 $dur-transi: 200ms;
 
 /** Animation points Prochainement **/

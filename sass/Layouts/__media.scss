@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 1130px) {
     .__section {
-        & .__note {
+        & .__note, .__chic {
             width: 90%;
             height: 90%;
         }
@@ -18,4 +18,36 @@
             display: none;
         }
     }
+}
+
+@media screen and (min-width: 750px) {
+
+    /** Header & Footer **/ 
+
+    .text-ohmy {
+        font-size: map-get($font-size, 'heading-750');
+    }
+    
+    .footer {
+        .lien-a {
+            font-size:  map-get($font-size, 'footer-750');
+        }
+    }
+
+    /** Index.html **/
+
+    .prochainement {
+        .texte-prochainement {
+            font-size:  map-get($font-size, 'footer-750');
+        }
+    }
+
+    /** Menu note **/
+
+    
+
+    /** Menu chic **/
+    /** Menu papille **/
+    /** Menu gout **/
+
 }
