@@ -7,24 +7,8 @@
 .article-index {
     width:          800px;
     flex-direction: row; 
-    & ul.list-menu {
-        list-style-type: none;
-        @include         tout-centrer;
-        flex-flow:       row wrap;
-        & li {
-            @include tout-centrer;
-            @include ombre-menu;
-            @include border;
-            margin:  20px 20px;
-            transform: scale(1);
-            transition: all $dur-transi;
-            &:hover {
-                transform: scale(1.02);
-                box-shadow: 5px 5px 10px 3px $gris-fonce-opa;
-            }        
-        }
-    }   
 }
+
 
 h3 {
     margin-top:  2rem;

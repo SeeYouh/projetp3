@@ -86,6 +86,17 @@
     transform: scale(1.1);
   }
 }
+@keyframes wiggles {
+  0% {
+    transform: rotate(0.8deg);
+  }
+  50% {
+    transform: rotate(-0.8deg);
+  }
+  100% {
+    transform: rotate(0.8deg);
+  }
+}
 /** Mise en page Header & Footer **/
 /** Flex **/
 /** Bordure **/
@@ -161,27 +172,6 @@
 .article-index {
   width: 800px;
   flex-direction: row;
-}
-.article-index ul.list-menu {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-.article-index ul.list-menu li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0px 5px 2px rgba(51, 51, 51, 0.63);
-  border: 1px solid #0000003f;
-  margin: 20px 20px;
-  transform: scale(1);
-  transition: all 200ms;
-}
-.article-index ul.list-menu li:hover {
-  transform: scale(1.02);
-  box-shadow: 5px 5px 10px 3px rgba(51, 51, 51, 0.247);
 }
 
 h3 {
@@ -306,16 +296,6 @@ table th {
 }
 
 /** index.html **/
-.menu__note, .menu__chic, .menu__papilles, .menu__gout {
-  width: 300px;
-  height: 500px;
-  font-size: 1.6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .menu__note {
   background-color: #fcdfdb;
   color: #3c1218;
@@ -412,6 +392,41 @@ table th {
   display: flex;
   place-content: space-around center;
   flex-flow: column wrap;
+}
+
+.list-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.list-menu .menu {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 5px 2px rgba(51, 51, 51, 0.63);
+  border: 1px solid #0000003f;
+  font-size: 1.6em;
+  flex-direction: column;
+  margin: 20px 20px;
+  overflow: hidden;
+}
+
+.transform {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1);
+  transition: all 200ms;
+}
+.transform:hover {
+  transform: scale(1.08);
+  opacity: 65%;
 }
 
 body {

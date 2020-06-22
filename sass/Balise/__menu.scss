@@ -1,11 +1,5 @@
 /** index.html **/
 
-.menu__note,.menu__chic, .menu__papilles, .menu__gout {
-    @include        taille-menu;
-    @include        texte-menu;
-    @include        tout-centrer;   
-    flex-direction: column;
-}
 .menu__note {
     @include __note;
     & .text-note {
@@ -75,7 +69,6 @@
 }
 
 .bg-menu {
-    //@include border;
     @include ombre-menu-2;
     flex-direction: column;
     place-content: space-between center;
@@ -92,6 +85,33 @@
     display: flex;
     place-content: space-around center;
     flex-flow: column wrap;
+}
+
+.list-menu {
+    @include         tout-centrer;
+    flex-flow:       row wrap;
+    & .menu {
+        @include taille-menu;
+        @include tout-centrer;
+        @include ombre-menu;
+        @include border;
+        @include texte-menu;
+        flex-direction: column;    
+        margin:  20px 20px;
+        overflow: hidden;
+    }
+}   
+
+.transform {
+    @include taille-menu;
+    @include tout-centrer;
+    flex-direction: column;    
+    transform: scale(1);
+    transition: all $dur-transi;
+    &:hover {
+        transform: scale(1.08);
+        opacity: 65%;
+    }        
 }
 
 @each $text, $valeur in $font-size {
