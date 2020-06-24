@@ -8,7 +8,7 @@
     }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1020px) {
     .__section {
         & .__note, .__chic {
             width: 90%;
@@ -28,8 +28,8 @@
         font-size: map-get($font-size, 'heading-750');
     }
     
-    .footer {
-        .lien-a {
+    footer {
+        & a {
             font-size:  map-get($font-size, 'footer-750');
         }
     }

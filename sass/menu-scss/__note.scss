@@ -1,26 +1,15 @@
-.__section {
-    @include tout-centrer;
-    @include border;
-    flex-direction: column;
+
+.iconote {
+    @include iconote;
+    font-size: 5rem;
 }
 
-.__note {
-    background-color: map-get($background-color, 'note');
-    & .iconote {
-        @include iconote;
-        font-size: 5rem;
+.menu__note {
+    & .text-note {
+        @include        tout-centrer; 
+        flex-direction: column;  
     }
     & h3 {
-        @include __note;
-        font-size: map-get($font-size, 'titre-menu');
-    }
-    & th {
-        & p {
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-    }
-    & .titre-tableau, table {
-        color: $colortext-note;
+        text-transform: uppercase;
     }
 }

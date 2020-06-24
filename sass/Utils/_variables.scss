@@ -1,46 +1,57 @@
 /**Couleur de fond**/
 
-$colour-primary:      #579c87;
-$colour-menunote:     #fcdfdb;
-$colour-menuchic:     #fff5fe;
-$colour-menupapilles: #f9f9f9;
-$colour-menugout:     #fff;
+$colour-primary:        #579c87;
+$colour-menunote:       #fcdfdb;
+$colour-menuchic:       #fff5fe;
+$colour-menupapilles:   #edefef;
+$colour-menugout:       #fff;
 
 $background-color: (
-    'heading':  $colour-primary,
-    'note':     $colour-menunote,
-    'chic':     $colour-menuchic,
-    'papilles': $colour-menupapilles,
-    'gout':     $colour-menugout
+    'heading':    $colour-primary,
+    'note':       $colour-menunote,
+    'chic':       $colour-menuchic,
+    'papilles':   $colour-menupapilles,
+    'gout':       $colour-menugout
 );
 
 /**Couleur du texte**/
 
 $colortext-primary:    #fdcb46;
+$colortext-base:       #000;
 $colortext-note:       #3c1218;
 $colortext-iconote-1:  #f04a5e;
 $colortext-iconote-2:  #f78f6a;
 $colortext-chic-1:     #c77412;
-$colortext-chic-2:     #906bfd;
+$colortext-chic-2:     #a56799;
+$colortext-chic-3:     #8f5aff;
 $colortext-papilles-1: #0431df;
-$colortext-papilles-2: #0887fb;
+$colortext-papilles-2: #0670f3;
+$colortext-papilles-3: #0887fb;
 $colortext-gout-1:     #3d9339;
 $colortext-gout-2:     #72bf56;
 $colortext-gout-3:     #bfff7e;
 
 $color-text: (
     'heading':    $colortext-primary,
+    'base':       $colortext-base,
     'note':       $colortext-note,
     'iconote-1':  $colortext-iconote-1,
     'iconote-2':  $colortext-iconote-2,
     'chic-1':     $colortext-chic-1,
     'chic-2':     $colortext-chic-2,
+    'chic-3':     $colortext-chic-3,
     'papilles-1': $colortext-papilles-1,
     'papilles-2': $colortext-papilles-2,
+    'papilles-3': $colortext-papilles-3,
     'gout-1':     $colortext-gout-1,
     'gout-2':     $colortext-gout-2,
     'gout-3':     $colortext-gout-3,
 );
+
+$color-text-degrade:
+    "papilles" $colortext-papilles-1 $colortext-papilles-2 $colortext-papilles-3,
+    "chic" $colortext-chic-1 $colortext-chic-2 $colortext-chic-3,
+    "gout"$colortext-gout-1 $colortext-gout-2 $colortext-gout-3;
 
 /** Couleur ombre **/
 
@@ -69,23 +80,24 @@ $font-family: (
 
 /** Taille texte **/
 
-$font-size-base: 1.6em;
+$font-size-base: 2em;
 
 $font-size: (
     'iconote':      3rem,
     'note':         1.3rem,
+    'note-menu':    2rem,
     'text-menu':    2.5rem,
     'text-tableau': 2rem,
-    'chic':         .9rem,
-    'chic-menu':    .9rem,
+    'chic':         1rem,
+    'chic-titre':   1.3rem,
     'papilles':     1.4rem,
     'gout':         1.5rem,
     'base':         $font-size-base,
-    'footer':       4vw,
+    'footer':       2vw,
     'footer-750':   1.5rem,
     'heading':      5vw,
     'heading-750':  5rem,
-    'titre-menu':   4rem,
+    'titre-menu':   3rem,
 );
 
 /** Durée animation **/
@@ -98,40 +110,16 @@ $size:      5px;
 $num-point: 3;
 $anim-delais:$dur-anim/$num-point;
 
-
-/** Menu **/
-
-$num-menu: 4;
-
-$menu-list: (
-    note: (
-        'bg':   $colour-menunote,
-        'txt':  $colortext-note,
-        'font': $devonshire,
-        'size': $font-size-base,
-    ),
-    chic: (
-        'bg':     $colour-menuchic,
-        'txt':    $colortext-chic-1,
-        'txt-2':  $colortext-chic-2,
-        'font':   $croissant-one,
-        'size':   $font-size-base,
-    ),
-    papilles: (
-        'bg':   map-get($background-color, 'papilles'),
-        'txt':  map-get($color-text, 'papilles'),
-        'font': map-get($font-family, 'papilles'),
-        'size': $font-size-base,
-    ),
-    gout: (
-        'bg':   map-get($background-color, 'gout'),
-        'txt':  map-get($color-text, 'gout'),
-        'font': map-get($font-family, 'gout'),
-        'size': $font-size-base,
-    ),
-);
-
 /** Height **/
 
 $height-header: 100px;
 $height-footer: 70px;
+
+/** Width **/
+
+$value-width:
+    "x-small" 10%,
+    "small" 30%,
+    "medium" 50%,
+    "large" 80%,
+    "x-large" 100%;

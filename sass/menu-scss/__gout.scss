@@ -1,0 +1,7 @@
+.text-gout {
+    @include                 tout-centrer; 
+    flex-direction:          column;  
+    background:              -webkit-linear-gradient(left, $colortext-gout-1, $colortext-gout-2, $colortext-gout-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

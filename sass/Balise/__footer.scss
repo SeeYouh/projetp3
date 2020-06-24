@@ -1,5 +1,4 @@
 .footer {
-    @include         formatage-vertjaune;
     z-index:         10;
     height:          $height-footer;
     position:        fixed;
@@ -14,8 +13,6 @@
     & a {
         width: 100%;
         height: 100%;
-        @include formatage-vertjaune;
-        @include font-secondaire;
         margin:   0 0.5rem;
         text-decoration: none;
     }

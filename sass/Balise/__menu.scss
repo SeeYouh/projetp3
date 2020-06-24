@@ -1,89 +1,25 @@
-/** index.html **/
-
-.menu__note {
-    @include __note;
-    & .text-note {
-        @include        tout-centrer; 
-        flex-direction: column;  
-    }
-    & .iconote {
-        @include iconote;
-    }
-    & h3 {
-        text-transform: uppercase;
-    }
-}
-
-.menu__chic {
-    background-color: map-get($background-color, 'chic' );
-    color:            map-get($color-text, 'chic');
-    font-family:      map-get($font-family, 'chic');
-    font-size:        map-get($font-size,'chic');
-    & h3 {
-        font-family: map-get($map: $font-family, $key: 'chic');
-        color:       map-get($map: $color-text, $key: 'chic-1');
-    }
-}
-
-.text-chic {
-    @include                 tout-centrer; 
-    background:              -webkit-linear-gradient(left, $colortext-chic-1, $colortext-chic-2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.menu__papilles {
-    background-color: map-get($background-color, 'papilles' );
-    color:            map-get($color-text, 'papilles');
-    font-family:      map-get($font-family, 'papilles');
-    font-size:        map-get($font-size,'papilles');
-    & .text-papilles {
-        @include                 tout-centrer; 
-        flex-direction:          column;  
-        background:              -webkit-linear-gradient(left, $colortext-papilles-1, $colortext-papilles-2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    & h3 {
-        color: map-get($map: $color-text, $key: 'papilles-1');
-    }
-
-}
-
-.menu__gout {
-    background-color: map-get($background-color, 'gout' );
-    color:            map-get($color-text, 'gout');
-    font-family:      map-get($font-family, 'gout');
-    font-size:        map-get($font-size,'gout');
-    & .text-gout {
-        @include                 tout-centrer; 
-        flex-direction:          column;  
-        background:              -webkit-linear-gradient(left, $colortext-gout-1, $colortext-gout-2, $colortext-gout-3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    & h3 {
-        color: map-get($map: $color-text, $key: 'gout-1');
-    }
-
-}
-
 .bg-menu {
     @include ombre-menu-2;
-    flex-direction: column;
-    place-content: space-between center;
-    width: 1100px;
-    height: 1200px;
+    width: 1000px;
+    height: 1100px;
     margin-bottom: 90px;
+}
+.menu-content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.bg-menu-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
 }
 
 .text-menu {
-    @include border;
-    position: relative;
-    width: 500px;
-    height: 80px;
-    display: flex;
-    place-content: space-around center;
+    place-content: center space-around;
     flex-flow: column wrap;
 }
 
@@ -114,20 +50,32 @@
     }        
 }
 
-@each $text, $valeur in $font-size {
-    .menu__#{$text} {
-        font-size: map-get($font-size, $valeur);
+.menu-detail {
+    //@include border;
+    display: flex;
+    flex-direction: row;
+    place-content: center space-between;
+}
+
+.titre-menu {
+    padding-bottom: -15px;
+    @include tout-centrer;
+    flex-direction: column;
+}
+
+.titre-menu-bas {
+    margin-top: 50px;
+    @include tout-centrer;
+    & .iconote {
+        font-size: 3rem;
     }
 }
 
-@mixin menu-list($restau) {
-    @each $restau, $value in $menu-list {
-        .menu-#{restau} {
-            background-color: map-get($value, 'bg') ;
-            color:            map-get($value, 'txt');
-            font-family:      map-get($value, 'font');
-            font-size:        map-get($value, 'size');
-        }
-    }
+.padding-lr {
+    padding: 0 100px 0 100px;
 }
 
+.titre {
+    display: flex;
+    flex-direction: row;
+}

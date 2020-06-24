@@ -1,0 +1,38 @@
+@each $family, $name in $font-family {
+    .family-#{$family} {
+        font-family: $name;
+    }
+}
+
+@each $size, $name in $font-size {
+    .size-#{$size} {
+        font-size: $name;
+    }
+}
+
+@each $color, $name in $color-text {
+    .color-#{$color} {
+        color: $name;
+    }
+}
+
+@each $bg-color, $name in $background-color {
+    .bg-#{$bg-color} {
+        background-color: $name;
+    }
+}
+
+@each $txt-degrad, $name-1, $name-2, $name-3 in $color-text-degrade {
+    .text-#{$txt-degrad} {
+        @include                 tout-centrer; 
+        background:              -webkit-linear-gradient(left, $name-1, $name-2, $name-3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;    
+    }
+}
+
+@each $width, $valeur in $value-width {
+    .width-#{$width} {
+        width: $valeur;
+    }
+}
