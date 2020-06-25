@@ -14,8 +14,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-around;
 }
 
 .text-menu {
@@ -51,7 +50,6 @@
 }
 
 .menu-detail {
-    //@include border;
     display: flex;
     flex-direction: row;
     place-content: center space-between;
