@@ -8,7 +8,7 @@
 /** Animation points Prochainement **/
 /** Height **/
 /** Width **/
-/** Padding Marging **/
+/** Padding Margin **/
 @font-face {
   font-family: "prompt";
   src: url("/sources/fonts/prompt/Prompt-SemiBoldItalic.ttf") format("ttf"), url("/sources/fonts/prompt/prompt-semibold-webfont.woff2") format("woff2"), url("/sources/fonts/prompt/prompt-semibold-webfont.woff") format("woff");
@@ -166,16 +166,40 @@
   font-size: 1.55rem;
 }
 
+.size-chic-titre-menu {
+  font-size: 3.5rem;
+}
+
 .size-papilles {
+  font-size: 1.8rem;
+}
+
+.size-papilles-menu {
   font-size: 1.4rem;
 }
 
 .size-papilles-titre {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.size-papilles-titre-menu {
+  font-size: 5rem;
 }
 
 .size-gout {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.size-gout-menu {
+  font-size: 1.4rem;
+}
+
+.size-gout-titre {
+  font-size: 3rem;
+}
+
+.size-gout-titre-menu {
+  font-size: 5rem;
 }
 
 .size-base {
@@ -465,6 +489,20 @@
   background-size: 100% 100%;
 }
 
+.pm-mentions p {
+  padding-bottom: 10px;
+}
+.pm-mentions h5, .pm-mentions img {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.pm-mentions h3 {
+  margin-top: 15px;
+}
+.pm-mentions h6 {
+  margin: 30px 0 10px 0;
+}
+
 .pm-note p {
   padding-bottom: 10px;
 }
@@ -475,38 +513,50 @@
 .pm-note h3 {
   margin-top: 1px;
 }
+.pm-note h6 {
+  margin: 0 0;
+}
 
 .pm-papilles p {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .pm-papilles h5, .pm-papilles img {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   margin-top: 50px;
 }
 .pm-papilles h3 {
   margin-top: 50px;
 }
+.pm-papilles h6 {
+  margin: 0 0;
+}
 
 .pm-chic p {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .pm-chic h5, .pm-chic img {
-  margin-bottom: 25px;
-  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 .pm-chic h3 {
   margin-top: 50px;
 }
+.pm-chic h6 {
+  margin: 0 0;
+}
 
 .pm-gout p {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .pm-gout h5, .pm-gout img {
-  margin-bottom: 50px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
 .pm-gout h3 {
   margin-top: 50px;
+}
+.pm-gout h6 {
+  margin: 0 0;
 }
 
 .h4 {
@@ -779,13 +829,34 @@ h3 {
   flex-direction: row;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mentions {
+  border: 1px solid #0000003f;
+  flex-direction: column;
+  width: 1100px;
+  height: 100%;
+}
+.mentions h2 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.63);
+}
+
 body {
   padding: 0;
   margin: 0;
   width: 100%;
   font-family: "caveat";
 }
-body ul, body h1, body h2, body h3, body p, body h4, body h5 {
+body ul, body h1, body h2, body h3, body p, body h4, body h5, body h6 {
   padding: 0;
   margin: 0;
 }

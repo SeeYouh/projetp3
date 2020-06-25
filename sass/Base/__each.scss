@@ -39,9 +39,9 @@
 
 @each $ligne,$name in $color-text {
     .ligne-#{$ligne} {
-        text-decoration: none;
-        background: linear-gradient(to top, $name 0, $name 4px, transparent 2px) no-repeat left bottom / 0 100%;
-        background-size: 0 100%;
+        text-decoration:            none;
+        background:                 linear-gradient(to top, $name 0, $name 4px, transparent 2px) no-repeat left bottom / 0 100%;
+        background-size:            0 100%;
         transition: background-size 300ms;
         &:hover {
             background-size: 100% 100%;
@@ -49,17 +49,20 @@
     }
 }
 
-@each $padmarg, $name-1, $name-2,$name-2-1, $name-3 in $padmarg {
+@each $padmarg, $name-1, $name-2,$name-2-1, $name-3, $name-4, $name4-1 in $padmarg {
     .pm-#{$padmarg} {
         & p {
             padding-bottom: $name-1;
         }
         & h5, img {
-            margin-bottom: $name-2;
-            margin-top: $name-2-1;
+            margin-bottom:  $name-2;
+            margin-top:     $name-2-1;
         }
         & h3 {
-            margin-top: $name-3;
+            margin-top:     $name-3;
+        }
+        & h6 {
+            margin: $name-4 0 $name4-1 0;
         }
     }
 }

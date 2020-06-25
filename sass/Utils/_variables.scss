@@ -50,8 +50,8 @@ $color-text: (
 
 $color-text-degrade:
     "papilles" $colortext-papilles-1 $colortext-papilles-2 $colortext-papilles-3,
-    "chic" $colortext-chic-1 $colortext-chic-2 $colortext-chic-3,
-    "gout"$colortext-gout-1 $colortext-gout-2 $colortext-gout-3;
+    "chic"     $colortext-chic-1 $colortext-chic-2 $colortext-chic-3,
+    "gout"     $colortext-gout-1 $colortext-gout-2 $colortext-gout-3;
 
 /** Couleur ombre **/
 
@@ -83,23 +83,29 @@ $font-family: (
 $font-size-base: 2em;
 
 $font-size: (
-    'iconote':        3rem,
-    'note':           1.3rem,
-    'note-menu':      2rem,
-    'text-menu':      2.5rem,
-    'text-tableau':   2rem,
-    'chic':           1.19rem,
-    'chic-menu':      .9rem,
-    'chic-titre':     1.55rem,
-    'papilles':       1.4rem,
-    'papilles-titre': 4rem,
-    'gout':           1.5rem,
-    'base':           $font-size-base,
-    'footer':         2vw,
-    'footer-750':     1.5rem,
-    'heading':        5vw,
-    'heading-750':    5rem,
-    'titre-menu':     3rem,
+    'iconote':              3rem,
+    'note':                 1.3rem,
+    'note-menu':            2rem,
+    'text-menu':            2.5rem,
+    'text-tableau':         2rem,
+    'chic':                 1.19rem,
+    'chic-menu':            .9rem,
+    'chic-titre':           1.55rem,
+    'chic-titre-menu':      3.5rem,
+    'papilles':             1.8rem,
+    'papilles-menu':        1.4rem,
+    'papilles-titre':       3rem,
+    'papilles-titre-menu':  5rem,
+    'gout':                 1.75rem,
+    'gout-menu':            1.4rem,
+    'gout-titre':           3rem,
+    'gout-titre-menu':      5rem,
+    'base':                 $font-size-base,
+    'footer':               2vw,
+    'footer-750':           1.5rem,
+    'heading':              5vw,
+    'heading-750':          5rem,
+    'titre-menu':           3rem,
 );
 
 /** Durée animation **/
@@ -121,15 +127,16 @@ $height-footer: 70px;
 
 $value-width:
     "x-small" 10%,
-    "small" 30%,
-    "medium" 50%,
-    "large" 80%,
+    "small"   30%,
+    "medium"  50%,
+    "large"   80%,
     "x-large" 100%;
 
-/** Padding Marging **/
+/** Padding Margin **/
 
 $padmarg:
-    "note" 10px 15px 30px 1px,
-    "papilles" 10px 25px 50px 50px,
-    "chic" 20px 25px 40px 50px,
-    "gout" 10px 50px 10px 50px,
+    "mentions" 10px 10px 50px 15px 30px 10px,
+    "note"     10px 15px 30px 1px,
+    "papilles" 20px 40px 50px 50px,
+    "chic"     30px 30px 50px 50px,
+    "gout"     20px 40px 50px 50px;
