@@ -134,6 +134,10 @@
   font-family: "prompt";
 }
 
+.family-mentions {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .size-iconote {
   font-size: 3rem;
 }
@@ -329,6 +333,55 @@
   -webkit-text-fill-color: transparent;
 }
 
+.text-mentions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(left, #3d9339, #72bf56, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-papilles-anim {
+  color: black;
+  transition: all 300ms;
+}
+.text-papilles-anim:hover {
+  background: -webkit-linear-gradient(left, #0431df, #0670f3, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-chic-anim {
+  color: black;
+  transition: all 300ms;
+}
+.text-chic-anim:hover {
+  background: -webkit-linear-gradient(left, #c77412, #a56799, #8f5aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gout-anim {
+  color: black;
+  transition: all 300ms;
+}
+.text-gout-anim:hover {
+  background: -webkit-linear-gradient(left, #3d9339, #72bf56, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-mentions-anim {
+  color: black;
+  transition: all 300ms;
+}
+.text-mentions-anim:hover {
+  background: -webkit-linear-gradient(left, #3d9339, #72bf56, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .width-x-small {
   width: 10%;
 }
@@ -350,7 +403,6 @@
 }
 
 .ligne-heading {
-  text-decoration: none;
   background: linear-gradient(to top, #fdcb46 0, #fdcb46 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -360,7 +412,6 @@
 }
 
 .ligne-base {
-  text-decoration: none;
   background: linear-gradient(to top, #000 0, #000 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -370,7 +421,6 @@
 }
 
 .ligne-note {
-  text-decoration: none;
   background: linear-gradient(to top, #3c1218 0, #3c1218 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -380,7 +430,6 @@
 }
 
 .ligne-iconote-1 {
-  text-decoration: none;
   background: linear-gradient(to top, #f04a5e 0, #f04a5e 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -390,7 +439,6 @@
 }
 
 .ligne-iconote-2 {
-  text-decoration: none;
   background: linear-gradient(to top, #f78f6a 0, #f78f6a 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -400,7 +448,6 @@
 }
 
 .ligne-chic-1 {
-  text-decoration: none;
   background: linear-gradient(to top, #c77412 0, #c77412 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -410,7 +457,6 @@
 }
 
 .ligne-chic-2 {
-  text-decoration: none;
   background: linear-gradient(to top, #a56799 0, #a56799 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -420,7 +466,6 @@
 }
 
 .ligne-chic-3 {
-  text-decoration: none;
   background: linear-gradient(to top, #8f5aff 0, #8f5aff 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -430,7 +475,6 @@
 }
 
 .ligne-papilles-1 {
-  text-decoration: none;
   background: linear-gradient(to top, #0431df 0, #0431df 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -440,7 +484,6 @@
 }
 
 .ligne-papilles-2 {
-  text-decoration: none;
   background: linear-gradient(to top, #0670f3 0, #0670f3 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -450,7 +493,6 @@
 }
 
 .ligne-papilles-3 {
-  text-decoration: none;
   background: linear-gradient(to top, #0887fb 0, #0887fb 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -460,7 +502,6 @@
 }
 
 .ligne-gout-1 {
-  text-decoration: none;
   background: linear-gradient(to top, #3d9339 0, #3d9339 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -470,7 +511,6 @@
 }
 
 .ligne-gout-2 {
-  text-decoration: none;
   background: linear-gradient(to top, #72bf56 0, #72bf56 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -480,7 +520,6 @@
 }
 
 .ligne-gout-3 {
-  text-decoration: none;
   background: linear-gradient(to top, #bfff7e 0, #bfff7e 4px, transparent 2px) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   transition: background-size 300ms;
@@ -834,20 +873,26 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .mentions {
-  border: 1px solid #0000003f;
   flex-direction: column;
-  width: 1100px;
+  width: 1000px;
   height: 100%;
+  background-color: #edefef;
 }
 .mentions h2 {
   padding-top: 50px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.63);
+}
+
+.mentions-titre {
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
 body {

@@ -51,7 +51,8 @@ $color-text: (
 $color-text-degrade:
     "papilles" $colortext-papilles-1 $colortext-papilles-2 $colortext-papilles-3,
     "chic"     $colortext-chic-1 $colortext-chic-2 $colortext-chic-3,
-    "gout"     $colortext-gout-1 $colortext-gout-2 $colortext-gout-3;
+    "gout"     $colortext-gout-1 $colortext-gout-2 $colortext-gout-3,
+    "mentions" $colortext-gout-1 $colortext-gout-2 $colortext-gout-3 $colortext-base;
 
 /** Couleur ombre **/
 
@@ -67,6 +68,7 @@ $kaushan-script: 'kaushan';
 $montserrat:     'montserrat';
 $prompt:         'prompt';
 $caveat:         'caveat';
+$base:            Arial, Helvetica, sans-serif;
 
 $font-family: (
     'heading':  $montserrat,
@@ -75,7 +77,8 @@ $font-family: (
     'chic':     $croissant-one,
     'papilles': $dancing-script,
     'gout':     $kaushan-script,
-    'footer':   $prompt
+    'footer':   $prompt,
+    'mentions': $base,
 );
 
 /** Taille texte **/
