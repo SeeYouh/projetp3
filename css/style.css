@@ -219,7 +219,7 @@
 }
 
 .size-base {
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 .size-footer {
@@ -563,14 +563,14 @@
 }
 
 .pm-note p {
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 .pm-note h5, .pm-note img {
-  margin-bottom: 15px;
-  margin-top: 30px;
+  margin-bottom: 5%;
+  margin-top: 4%;
 }
 .pm-note h3 {
-  margin-top: 1px;
+  margin-top: 1%;
 }
 .pm-note h6 {
   margin: 0 0;
@@ -584,35 +584,35 @@
   margin-top: 5%;
 }
 .pm-papilles h3 {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .pm-papilles h6 {
   margin: 0 0;
 }
 
 .pm-chic p {
-  padding-bottom: 30px;
+  padding-bottom: 5%;
 }
 .pm-chic h5, .pm-chic img {
-  margin-bottom: 30px;
-  margin-top: 40px;
+  margin-bottom: 3%;
+  margin-top: 5%;
 }
 .pm-chic h3 {
-  margin-top: 50px;
+  margin-top: 5%;
 }
 .pm-chic h6 {
   margin: 0 0;
 }
 
 .pm-gout p {
-  padding-bottom: 20px;
+  padding-bottom: 5%;
 }
 .pm-gout h5, .pm-gout img {
-  margin-bottom: 40px;
-  margin-top: 50px;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .pm-gout h3 {
-  margin-top: 50px;
+  margin-top: 5%;
 }
 .pm-gout h6 {
   margin: 0 0;
@@ -783,7 +783,7 @@ h3 {
   align-items: center;
   box-shadow: 0 0px 5px 2px rgba(51, 51, 51, 0.63);
   border: 1px solid #0000003f;
-  font-size: 2em;
+  font-size: 1.5rem;
   flex-direction: column;
   margin: 20px 20px;
   overflow: hidden;
@@ -848,8 +848,7 @@ h3 {
 .mentions {
   flex-direction: column;
   width: 1000px;
-  height: 100%;
-  background-color: #edefef;
+  height: 840px;
 }
 .mentions h2 {
   padding-top: 50px;
@@ -895,7 +894,7 @@ body a {
     display: none;
   }
 
-  .bg-menu {
+  .bg-menu, .mentions {
     width: 90%;
     height: 90%;
   }
@@ -919,7 +918,7 @@ body a {
     width: 100%;
   }
 
-  .bg-menu-content {
+  .bg-menu-content, .mentions {
     text-align: center;
   }
 

@@ -84,7 +84,7 @@ $font-family: (
 
 /** Taille texte **/
 
-$font-size-base: 2em;
+$font-size-base: 1.5rem;
 
 $font-size: (
     'body':                 10px,
@@ -144,7 +144,7 @@ $value-width:
 
 $padmarg:
     "mentions" 10px 10px 50px 15px 30px 10px,
-    "note"     10px 15px 30px 1px,
-    "papilles" 5% 5% 5% 10%,
-    "chic"     30px 30px 40px 50px,
-    "gout"     20px 40px 50px 50px;
+    "note"     1% 5% 4% 1%,
+    "papilles" 5% 5% 5% 5%,
+    "chic"     5% 3% 5% 5%,
+    "gout"     5% 5% 5% 5%,
