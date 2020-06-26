@@ -847,6 +847,7 @@ h3 {
 
 .mentions {
   flex-direction: column;
+  text-align: center;
   width: 1000px;
   height: 840px;
 }
@@ -918,7 +919,7 @@ body a {
     width: 100%;
   }
 
-  .bg-menu-content, .mentions {
+  .bg-menu-content {
     text-align: center;
   }
 
