@@ -151,19 +151,19 @@
 }
 
 .size-iconote {
-  font-size: 3rem;
-}
-
-.size-note {
-  font-size: 1.3rem;
-}
-
-.size-note-menu {
   font-size: 2rem;
 }
 
+.size-note {
+  font-size: 1.5rem;
+}
+
+.size-note-menu {
+  font-size: 1.3rem;
+}
+
 .size-text-menu {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .size-text-tableau {
@@ -247,7 +247,7 @@
 }
 
 .size-titre-menu {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .color-heading {
@@ -661,7 +661,7 @@
 h3 {
   margin-top: 2rem;
   font-weight: bolder;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "caveat";
 }
 
@@ -733,7 +733,7 @@ h3 {
   padding-top: 50px;
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.63);
 }
 
@@ -855,7 +855,7 @@ h3 {
   padding-top: 50px;
   padding-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.63);
 }
 
@@ -943,7 +943,7 @@ body a {
 
 .iconote {
   margin-right: 15px;
-  font-size: 3rem;
+  font-size: 2rem;
   background: linear-gradient(to right, #f04a5e, #f78f6a);
   background-color: linear-gradient(to right, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
