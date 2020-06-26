@@ -4,12 +4,11 @@
 @import 
     "./Base/_fonts",
     "./Base/_keyframes",
-    "./Base/_background",
+    "./Base/_mixin",
     "./Base/_each";
 
 @import 
     "./Components/_bouton",
-    "./Components/_trait",
     "./Components/_animation";
 
 @import
