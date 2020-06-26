@@ -20,26 +20,18 @@
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
 
     /** Header & Footer **/ 
-
+    
     .text-ohmy {
         font-size: map-get($font-size, 'heading-750');
     }
     
-    footer {
-        & a {
-            font-size:  map-get($font-size, 'footer-750');
-        }
-    }
-
     /** Index.html **/
 
-    .prochainement {
-        .texte-prochainement {
-            font-size:  map-get($font-size, 'footer-750');
-        }
+    .texte-prochainement {
+        font-size:  map-get($font-size, 'prochainement-750');
     }
 
     /** Menu note **/

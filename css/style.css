@@ -138,6 +138,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.family-prochainement {
+  font-family: "prompt";
+}
+
+.size-body {
+  font-size: 10px;
+}
+
 .size-iconote {
   font-size: 3rem;
 }
@@ -211,11 +219,19 @@
 }
 
 .size-footer {
-  font-size: 2vw;
+  font-size: 1rem;
 }
 
 .size-footer-750 {
-  font-size: 1.5rem;
+  font-size: 0.5rem;
+}
+
+.size-prochainement {
+  font-size: 2.5rem;
+}
+
+.size-prochainement-750 {
+  font-size: 1.8rem;
 }
 
 .size-heading {
@@ -223,7 +239,7 @@
 }
 
 .size-heading-750 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .size-titre-menu {
@@ -604,49 +620,6 @@
   text-align: center;
 }
 
-/**.trait-papilles:after, .trait-papilles:before {
-    overflow: visible; 
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-    &::before {
-        display: block;
-        content: "";
-        height: 30px;
-        margin-top: -31px;
-        border-style: solid;
-        border-color: black;
-        border-width: 0 0 1px 0;
-        border-radius: 20px;    
-    }
-}**/
-h4:before, h4:after {
-  width: 50%;
-  overflow: hidden;
-  height: 30px;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px 0 0 0;
-  border-radius: 20px;
-}
-h4:before::before, h4:after::before {
-  display: block;
-  content: "";
-  height: 30px;
-  margin-top: -31px;
-  border-style: solid;
-  border-color: black;
-  border-width: 0 0 1px 0;
-  border-radius: 20px;
-}
-
-h4:before {
-  margin-left: -50%;
-  text-align: right;
-}
-
 .footer {
   z-index: 10;
   height: 70px;
@@ -707,8 +680,6 @@ h3 {
 }
 .prochainement .texte-prochainement {
   padding-right: 5px;
-  font-family: "prompt";
-  font-size: 2vw;
 }
 .prochainement .points {
   margin-top: 5%;
@@ -930,19 +901,15 @@ body a {
     display: none;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   /** Header & Footer **/
   .text-ohmy {
-    font-size: 5rem;
-  }
-
-  footer a {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   /** Index.html **/
-  .prochainement .texte-prochainement {
-    font-size: 1.5rem;
+  .texte-prochainement {
+    font-size: 1.8rem;
   }
 
   /** Menu note **/
