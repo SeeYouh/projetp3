@@ -10,20 +10,22 @@
 
 @media screen and (max-width: 1020px) {
     .__section {
-        & .__note, .__chic {
-            width: 90%;
-            height: 90%;
-        }
         & h2 {
             display: none;
         }
+    }
+    .bg-menu {
+        width: 90%;
+        height: 90%;
     }
 }
 
 @media screen and (max-width: 750px) {
 
     /** Header & Footer **/ 
-    
+    .body {
+        font-size: map-get($font-size, 'body-750');
+    }
     .text-ohmy {
         font-size: map-get($font-size, 'heading-750');
     }
@@ -34,10 +36,9 @@
         font-size:  map-get($font-size, 'prochainement-750');
     }
 
-    .article-index {
+    .prochainement, .article-index {
         width: 100%;
     }
-
     /** Menu**/
 
     

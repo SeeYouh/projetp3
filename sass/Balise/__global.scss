@@ -43,7 +43,7 @@ h3 {
     margin-bottom:  80px;
 }
 
-/*.__section {
+.__section {
     @include tout-centrer;
     @include border;
     flex-direction: column;
@@ -54,7 +54,7 @@ h3 {
         font-size: map-get($map: $font-size, $key: 'titre-menu');
         color: darken($gris-fonce, 50);
     }
-}*/
+}
 
 .bg-titre-tableau {
     @include tout-centrer;
