@@ -8,9 +8,9 @@
     flex-direction: column;
     text-align: center;
     width: 1000px;
-    height: 840px;
+    height: 100%;
     & h2 {
-        padding-top: 50px;
+        padding-top: 30px;
         padding-bottom: 20px;
         font-family: $base;
         font-size: map-get($map: $font-size, $key: 'titre-menu');
