@@ -931,16 +931,6 @@ body a {
 /** Menu chic **/
 /** Menu papille **/
 /** Menu gout **/
-.text-gout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: -webkit-linear-gradient(left, #3d9339, #72bf56, #bfff7e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .iconote {
   margin-right: 15px;
   font-size: 2rem;
