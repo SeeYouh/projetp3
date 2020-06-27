@@ -748,7 +748,7 @@ h3 {
   box-shadow: 0 0px 15px 2px rgba(51, 51, 51, 0.247);
   width: 800px;
   height: 900px;
-  margin-bottom: 90px;
+  margin: 20px 0 90px 0;
 }
 
 .menu-content {
