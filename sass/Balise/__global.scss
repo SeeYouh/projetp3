@@ -41,9 +41,6 @@ h3 {
     @include        tout-centrer;
     flex-direction: column;
     margin-bottom:  80px;
-    & h5 {
-        display: none;
-    }
 }
 
 .__section {
