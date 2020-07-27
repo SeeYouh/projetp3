@@ -53,7 +53,6 @@
 
 @each $ligne,$name in $color-text {
     .ligne-#{$ligne} {
-        //text-decoration:            none;
         background:                 linear-gradient(to top, $name 0, $name 4px, transparent 2px) no-repeat left bottom / 0 100%;
         background-size:            0 100%;
         transition: background-size 300ms;

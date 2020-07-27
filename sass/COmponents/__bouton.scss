@@ -8,3 +8,16 @@
         animation-timing-function: linear;
         }  
     }
+
+.transform {
+    @include taille-menu;
+    @include tout-centrer;
+    flex-direction: column;    
+    transform: scale(1);
+    transition: all $dur-transi;
+    &:hover {
+        transform: scale(1.08);
+        opacity: 65%;
+    }        
+}
+    
